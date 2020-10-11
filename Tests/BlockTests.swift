@@ -25,7 +25,6 @@ final class BlockTests: XCTestCase {
         "https://interactive.spiegel.de/int/pub/common/img/pixel.gif",
         "https://datawrapper.dwcdn.net/IoE9j/223/",
         "https://googleads.g.doubleclick.net/pagead/render_post_ads_v1.html#exk=1306804804&a_pr=11:TPeIK7Weg7.lb3KjNhYf7fSugAMSGF693F5KAw",
-        "https://www.google.com/pagead/drt/ui",
         "https://imagesrv.adition.com/banners/268/00/b3/65/06/index.html?clicktag=https%3A%2F%2Fde7.splicky.com%2Fclk%3Fmid%3D8805366030483347127%26aid%3D406208%26url%3Dhttps%3A%2F%2Fad4.adfarm1.adition.com%2Fredi%3Flid%3D6882352274847564137%26gdpr%3D0%26gdpr%5Fconsent%3D%26gdpr%5Fpd%3D0%26userid%3D6882352274847433065%26sid%3D4573083%26kid%3D3887752%26bid%3D11773239%26c%3D23805%26keyword%3D%255Bu%255Dtheguardian.com%255BIDFA%255D%255BAAID%255D%26sr%3D0%26clickurl%3Dhttps%3A%2F%2Fad2.adfarm1.adition.com%2Fredi%3Flid%3D6882352274857395416%26gdpr%3D0%26gdpr%5Fconsent%3D%26gdpr%5Fpd%3D0%26userid%3D6882352274857264344%26sid%3D4534627%26kid%3D3865979%26bid%3D11756806%26c%3D13762%26keyword%3DPACS%255F4573083%255F11773239%26sr%3D0%26clickurl%3D&gdpr=0&gdpr_consent=&h5Params=%7B%7D",
         "https://us-u.openx.net/w/1.0/pd?cc=1&plm=10&ph=bbb82fae-1d27-4d90-bb10-e24164ecd7bc",
         "https://imagesrv.adition.com/banners/268/00/b3/65/06/index.html?clicktag=https%3A%2F%2Fde7.splicky.com%2Fclk%3Fmid%3D8805366030483347127%26aid%3D406208%26url%3Dhttps%3A%2F%2Fad4.adfarm1.adition.com%2Fredi%3Flid%3D6882352274847564137%26gdpr%3D0%26gdpr%5Fconsent%3D%26gdpr%5Fpd%3D0%26userid%3D6882352274847433065%26sid%3D4573083%26kid%3D3887752%26bid%3D11773239%26c%3D23805%26keyword%3D%255Bu%255Dtheguardian.com%255BIDFA%255D%255BAAID%255D%26sr%3D0%26clickurl%3Dhttps%3A%2F%2Fad2.adfarm1.adition.com%2Fredi%3Flid%3D6882352274857395416%26gdpr%3D0%26gdpr%5Fconsent%3D%26gdpr%5Fpd%3D0%26userid%3D6882352274857264344%26sid%3D4534627%26kid%3D3865979%26bid%3D11756806%26c%3D13762%26keyword%3DPACS%255F4573083%255F11773239%26sr%3D0%26clickurl%3D&gdpr=0&gdpr_consent=&h5Params=%7B%7D",
@@ -50,9 +49,9 @@ final class BlockTests: XCTestCase {
     func test() {
         let expect = expectation(description: "")
         expect.expectedFulfillmentCount = list.count
-        list.forEach {
-            tron.accept(URL(string: $0)!) {
-                XCTAssertFalse($0)
+        list.forEach { string in
+            tron.accept(URL(string: string)!) {
+                XCTAssertFalse($0, string)
                 expect.fulfill()
             }
         }
