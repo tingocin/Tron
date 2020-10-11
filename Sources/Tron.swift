@@ -1,7 +1,9 @@
 import Foundation
 
-public extension URL {
-    var accept: Bool {
-        true
+public final class Tron {
+    public init() { }
+    
+    public func accept(_ url: URL, result: (Bool) -> Void) {
+        
     }
 }
