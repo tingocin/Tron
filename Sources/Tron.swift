@@ -1,3 +1,7 @@
-struct Tron {
-    var text = "Hello, World!"
+import Foundation
+
+public extension URL {
+    var accept: Bool {
+        true
+    }
 }
