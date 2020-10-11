@@ -34,7 +34,6 @@ extension Tron {
                                 "imasdk",
                                 "addthis",
                                 "ampproject",
-                                "cdn",
                                 "emsservice",
                                 "amazon-adsystem",
                                 "rubiconproject",
