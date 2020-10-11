@@ -52,6 +52,7 @@ final class BlockTests: XCTestCase {
         list.forEach { string in
             tron.accept(URL(string: string)!) {
                 XCTAssertFalse($0, string)
+                XCTAssertEqual(.main, Thread.current)
                 expect.fulfill()
             }
         }

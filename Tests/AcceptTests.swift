@@ -19,6 +19,7 @@ final class AcceptTests: XCTestCase {
         list.forEach {
             tron.accept(URL(string: $0)!) {
                 XCTAssertTrue($0)
+                XCTAssertEqual(.main, Thread.current)
                 expect.fulfill()
             }
         }
