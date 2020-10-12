@@ -39,5 +39,6 @@ extension Tron {
                                 "creativecdn",
                                 "googletagservices",
                                 "media",
-                                "flashtalking"])
+                                "flashtalking",
+                                "optimizely"])
 }
