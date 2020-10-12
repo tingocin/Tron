@@ -39,7 +39,8 @@ final class BlockTests: XCTestCase {
         "https://aax-eu.amazon-adsystem.com/s/iu3?cm3ppd=1&d=dtb-pub&csif=t&dl=n-emx&dcc=t",
         "https://secure-assets.rubiconproject.com/utils/xapi/multi-sync.html?p=19564_2&endpoint=us-east&gdpr=1&gdpr_consent=CO7Hn9TO7HoCpASABCENA6CsAP_AAG_AAAYgGxwIAAAgAKgAYABoAEgAOQAgACEAGgAOgAfABFgCYAJoATwApABbAC_AGEAYgAzAB4AD8AIAAQkAjgCPgFIAUoArYCDgIQARYAtABgAEMAI1AXmAwQDY4CQAHIAQABCADQAHwATAAngBSAC-AGIAMwAhABHAClgIOAhABFgC0AGAAXmAAA.YAAAAAAAAAAA",
         "https://eus.rubiconproject.com/usync.html?p=19564_2&endpoint=us-east&gdpr=1&gdpr_consent=CO7Hn9TO7HoCpASABCENA6CsAP_AAG_AAAYgGxwIAAAgAKgAYABoAEgAOQAgACEAGgAOgAfABFgCYAJoATwApABbAC_AGEAYgAzAB4AD8AIAAQkAjgCPgFIAUoArYCDgIQARYAtABgAEMAI1AXmAwQDY4CQAHIAQABCADQAHwATAAngBSAC-AGIAMwAhABHAClgIOAhABFgC0AGAAXmAAA.YAAAAAAAAAAA",
-        "https://ams.creativecdn.com/tags?type=iframe&id=pr_xhTnXtOx50jOnWfwIwkY_home&tc=1"
+        "https://ams.creativecdn.com/tags?type=iframe&id=pr_xhTnXtOx50jOnWfwIwkY_home&tc=1",
+        "https://a3013110282.cdn.optimizely.com/client_storage/a3013110282.html"
     ]
     
     override func setUp() {

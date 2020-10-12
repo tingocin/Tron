@@ -33,7 +33,6 @@ extension Tron {
                                 "googleapis",
                                 "imasdk",
                                 "addthis",
-                                "ampproject",
                                 "emsservice",
                                 "amazon-adsystem",
                                 "rubiconproject",
