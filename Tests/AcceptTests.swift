@@ -1,8 +1,10 @@
 import XCTest
 import Tron
+import Combine
 
 final class AcceptTests: XCTestCase {
     private var tron: Tron!
+    private var subs = Set<AnyCancellable>()
     private let list = [
         "https://www.ecosia.org",
         "https://www.theguardian.com/email/form/footer/today-uk",
@@ -18,11 +20,10 @@ final class AcceptTests: XCTestCase {
         let expect = expectation(description: "")
         expect.expectedFulfillmentCount = list.count
         list.forEach { url in
-            tron.policy(for: URL(string: url)!) {
+            tron.policy(for: URL(string: url)!).sink {
                 XCTAssertEqual(.allow, $0, url)
-                XCTAssertEqual(.main, Thread.current)
                 expect.fulfill()
-            }
+            }.store(in: &subs)
         }
         waitForExpectations(timeout: 1)
     }
