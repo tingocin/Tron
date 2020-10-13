@@ -17,9 +17,9 @@ final class AcceptTests: XCTestCase {
     func test() {
         let expect = expectation(description: "")
         expect.expectedFulfillmentCount = list.count
-        list.forEach {
-            tron.accept(URL(string: $0)!) {
-                XCTAssertTrue($0)
+        list.forEach { url in
+            tron.policy(for: URL(string: url)!) {
+                XCTAssertEqual(.allow, $0, url)
                 XCTAssertEqual(.main, Thread.current)
                 expect.fulfill()
             }

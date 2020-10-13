@@ -49,9 +49,9 @@ final class BlockTests: XCTestCase {
     func test() {
         let expect = expectation(description: "")
         expect.expectedFulfillmentCount = list.count
-        list.forEach { string in
-            tron.accept(URL(string: string)!) {
-                XCTAssertFalse($0, string)
+        list.forEach { url in
+            tron.policy(for: URL(string: url)!) {
+                XCTAssertEqual(.deny, $0, url)
                 XCTAssertEqual(.main, Thread.current)
                 expect.fulfill()
             }
