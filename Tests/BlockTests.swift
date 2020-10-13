@@ -43,7 +43,8 @@ final class BlockTests: XCTestCase {
         "https://ams.creativecdn.com/tags?type=iframe&id=pr_xhTnXtOx50jOnWfwIwkY_home&tc=1",
         "https://a3013110282.cdn.optimizely.com/client_storage/a3013110282.html",
         "https://www.medtargetsystem.com/beacon/portal/?_url=https%3A%2F%2Fwww.newyorker.com%2F&_sid=b57e32ba-6720-46cf-bffd-5b42c2148e87&_vid=e807871f-26bc-4ffa-aa70-ba200cb61578&_ak=119-536-9A036248&_flash=false&_th=undefined%7C1602587609%7Cundefined",
-        "https://tr.snapchat.com/cm/i?pid=da17f2f6-35e0-46e3-b2ec-3f325753384d"
+        "https://tr.snapchat.com/cm/i?pid=da17f2f6-35e0-46e3-b2ec-3f325753384d",
+        "https://d1jow6p6g37b9u.cloudfront.net/1I5Z20ucHo6CF0SQCXRY0YdREn9ZDUmNBoSEBY6B6mRQAVqt1F6Z24KC9Via-FmTF2xS24i60IqM-2qiEnWZ13yC0EKWA3CtFGtS24u68UuJAX-MCWxS94ysCGOY7HtUG2pS9IesD3pQAGmXCGxS24i600qY7IyH11-0BUWtGGdVHo6cHo6B6mRQAVqt1F6Z20WE0XWVAH-20Xe324uB0GiZ7n-uFHSz2k-cHo5R10dT10JR0EJQohJg?TI=MQA3j5TxzwUMMYN#goog_1789187359"
     ]
     
     override func setUp() {

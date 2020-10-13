@@ -42,5 +42,6 @@ extension Tron {
                                 "flashtalking",
                                 "optimizely",
                                 "medtargetsystem",
-                                "tr"])
+                                "tr",
+                                "cloudfront"])
 }
