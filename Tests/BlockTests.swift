@@ -41,7 +41,9 @@ final class BlockTests: XCTestCase {
         "https://secure-assets.rubiconproject.com/utils/xapi/multi-sync.html?p=19564_2&endpoint=us-east&gdpr=1&gdpr_consent=CO7Hn9TO7HoCpASABCENA6CsAP_AAG_AAAYgGxwIAAAgAKgAYABoAEgAOQAgACEAGgAOgAfABFgCYAJoATwApABbAC_AGEAYgAzAB4AD8AIAAQkAjgCPgFIAUoArYCDgIQARYAtABgAEMAI1AXmAwQDY4CQAHIAQABCADQAHwATAAngBSAC-AGIAMwAhABHAClgIOAhABFgC0AGAAXmAAA.YAAAAAAAAAAA",
         "https://eus.rubiconproject.com/usync.html?p=19564_2&endpoint=us-east&gdpr=1&gdpr_consent=CO7Hn9TO7HoCpASABCENA6CsAP_AAG_AAAYgGxwIAAAgAKgAYABoAEgAOQAgACEAGgAOgAfABFgCYAJoATwApABbAC_AGEAYgAzAB4AD8AIAAQkAjgCPgFIAUoArYCDgIQARYAtABgAEMAI1AXmAwQDY4CQAHIAQABCADQAHwATAAngBSAC-AGIAMwAhABHAClgIOAhABFgC0AGAAXmAAA.YAAAAAAAAAAA",
         "https://ams.creativecdn.com/tags?type=iframe&id=pr_xhTnXtOx50jOnWfwIwkY_home&tc=1",
-        "https://a3013110282.cdn.optimizely.com/client_storage/a3013110282.html"
+        "https://a3013110282.cdn.optimizely.com/client_storage/a3013110282.html",
+        "https://www.medtargetsystem.com/beacon/portal/?_url=https%3A%2F%2Fwww.newyorker.com%2F&_sid=b57e32ba-6720-46cf-bffd-5b42c2148e87&_vid=e807871f-26bc-4ffa-aa70-ba200cb61578&_ak=119-536-9A036248&_flash=false&_th=undefined%7C1602587609%7Cundefined",
+        "https://tr.snapchat.com/cm/i?pid=da17f2f6-35e0-46e3-b2ec-3f325753384d"
     ]
     
     override func setUp() {

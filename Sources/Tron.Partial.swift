@@ -40,5 +40,7 @@ extension Tron {
                                 "googletagservices",
                                 "media",
                                 "flashtalking",
-                                "optimizely"])
+                                "optimizely",
+                                "medtargetsystem",
+                                "tr"])
 }
