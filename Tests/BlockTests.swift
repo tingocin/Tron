@@ -52,7 +52,7 @@ final class BlockTests: XCTestCase {
         let expect = expectation(description: "")
         expect.expectedFulfillmentCount = list.count
         list.forEach { url in
-            tron.policy(for: URL(string: url)!).sink {
+            tron.policy(for: URL(string: url)!, shield: true).sink {
                 XCTAssertEqual(.deny, $0, url)
                 expect.fulfill()
             }.store(in: &subs)

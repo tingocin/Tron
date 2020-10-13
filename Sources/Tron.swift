@@ -6,7 +6,7 @@ public final class Tron {
     
     public init() { }
     
-    public func policy(for url: URL) -> Future<Policy, Never> {
+    public func policy(for url: URL, shield: Bool) -> Future<Policy, Never> {
         .init { [weak self] result in
             self?.queue.async {
                 let url = url.absoluteString
@@ -14,15 +14,20 @@ public final class Tron {
                     result(.success(.deny))
                     return
                 }
-                if let schemeless = url.hasPrefix("https") ? url.dropFirst(8) :
-                    url.hasPrefix("http") ? url.dropFirst(7) : nil {
-                    for item in schemeless.components(separatedBy: "/").first!.components(separatedBy: ".") {
-                        guard Self.partial.contains(item) else { continue }
-                        result(.success(.deny))
-                        return
+                if let schemeless = url.hasPrefix(Scheme.https.rawValue) ? url.dropFirst(8) :
+                    url.hasPrefix(Scheme.http.rawValue) ? url.dropFirst(7) : nil {
+                    if shield {
+                        for item in schemeless.components(separatedBy: "/").first!.components(separatedBy: ".") {
+                            guard Self.partial.contains(item) else { continue }
+                            result(.success(.deny))
+                            return
+                        }
+                        result(.success(.allow))
+                    } else {
+                        result(.success(.allow))
                     }
                 }
-                result(.success(.allow))
+                result(.success(.external))
             }
         }
     }

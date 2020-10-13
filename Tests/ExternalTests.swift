@@ -19,7 +19,7 @@ final class ExternalTests: XCTestCase {
         let expect = expectation(description: "")
         expect.expectedFulfillmentCount = list.count
         list.forEach { url in
-            tron.policy(for: URL(string: url)!).sink {
+            tron.policy(for: URL(string: url)!, shield: true).sink {
                 XCTAssertEqual(.external, $0, url)
                 expect.fulfill()
             }.store(in: &subs)
