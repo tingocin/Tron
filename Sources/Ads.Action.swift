@@ -1,7 +1,7 @@
 import Foundation
 
 extension Ads {
-    enum Action: CustomStringConvertible {
+    enum Action: CustomStringConvertible, Hashable {
         case
         css(Selector),
         block
@@ -22,6 +22,14 @@ extension Ads {
 } () as String)
 }
 """
+        }
+        
+        func hash(into: inout Hasher) {
+            into.combine(description)
+        }
+        
+        static func == (lhs: Self, rhs: Self) -> Bool {
+            lhs.description == rhs.description
         }
     }
 }

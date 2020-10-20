@@ -13,344 +13,55 @@ final class AdsTests: XCTestCase {
         XCTAssertTrue(contains("css-display-none", "div[class*='card-productads']", "https://www.ecosia.org"))
     }
     
-    func testEcosiaAds() {
-        
+    func testGoogle() {
+        XCTAssertTrue(contains("css-display-none", "div[id='taw']", "https://www.google.com"))
+        XCTAssertTrue(contains("css-display-none", "div[id='rhs']", "https://www.google.com"))
+        XCTAssertTrue(contains("css-display-none", "div[class*='commercial']", "https://www.google.com"))
+        XCTAssertTrue(contains("css-display-none", "div[id='tadsb']", "https://www.google.com"))
     }
     
-    private func contains(_ type: String, _ selector: String? = nil, _ filter: String) -> Bool {
+    func testBlock() {
+        XCTAssertTrue(contains("block", nil, "https://ads.pubmatic.com"))
+        XCTAssertTrue(contains("block", nil, ".*googlesyndication.com"))
+        
+        XCTAssertTrue(contains("block", nil, "https://www.dianomi.com"))
+        XCTAssertTrue(contains("block", nil, "https://vars.hotjar.com"))
+        XCTAssertTrue(contains("block", nil, "https://contextual.media.net"))
+        XCTAssertTrue(contains("block", nil, "https://imasdk.googleapis.com"))
+        XCTAssertTrue(contains("block", nil, "https://platform.twitter.com"))
+        XCTAssertTrue(contains("block", nil, "https://mafo.adalliance.io"))
+        XCTAssertTrue(contains("block", nil, "https://ad.yieldlab.net"))
+        XCTAssertTrue(contains("block", nil, ".*adsystem.com"))
+        XCTAssertTrue(contains("block", nil, "https://static.emsservice.de"))
+        XCTAssertTrue(contains("block", nil, "https://cdn.flashtalking.com"))
+        XCTAssertTrue(contains("block", nil, "https://gum.criteo.com"))
+        XCTAssertTrue(contains("block", nil, "https://imagesrv.adition.com"))
+        XCTAssertTrue(contains("block", nil, "https://us-u.openx.net"))
+        XCTAssertTrue(contains("block", nil, "https://www.google.com/pagead/"))
+        XCTAssertTrue(contains("block", nil, "https://interactive.guim.co.uk"))
+        XCTAssertTrue(contains("block", nil, "https://js-sec.indexww.com"))
+        XCTAssertTrue(contains("block", nil, "https://elb.the-ozone-project.com"))
+        XCTAssertTrue(contains("block", nil, "https://www.googleadservices.com"))
+        XCTAssertTrue(contains("block", nil, "https://googleads.g.doubleclick.net"))
+        XCTAssertTrue(contains("block", nil, "https://s7.addthis.com"))
+        XCTAssertTrue(contains("block", nil, "https://widgets.sparwelt.click"))
+        XCTAssertTrue(contains("block", nil, "https://adstax-match.adrtx.net"))
+        XCTAssertTrue(contains("block", nil, "https://aax-eu.amazon-adsystem.com"))
+        XCTAssertTrue(contains("block", nil, "https://datawrapper.dwcdn.net"))
+        XCTAssertTrue(contains("block", nil, "https://secure-assets.rubiconproject.com"))
+        XCTAssertTrue(contains("block", nil, "https://eus.rubiconproject.com"))
+        XCTAssertTrue(contains("block", nil, "https://ams.creativecdn.com"))
+        XCTAssertTrue(contains("block", nil, "https://www.youtube.com/embed"))
+        XCTAssertTrue(contains("block", nil, "https://www.medtargetsystem.com"))
+        XCTAssertTrue(contains("block", nil, "https://tr.snapchat.com"))
+        XCTAssertTrue(contains("block", nil, "https://cloudfront.net"))
+        XCTAssertTrue(contains("block", nil, "https://platform.linkedin.com"))
+        XCTAssertTrue(contains("block", nil, "https://www.google-analytics.com"))
+    }
+    
+    private func contains(_ type: String, _ selector: String?, _ filter: String) -> Bool {
         dictonary.contains { $0["action"]!["type"] == type
             && $0["trigger"]!["url-filter"] == filter
             && $0["action"]!["selector"] == selector }
     }
 }
-
-
-/*
- 
-{
- "action": {
-     "type": "css-display-none",
-     "selector": "div[class*='card-productads']"
- },
- "trigger": {
-     "url-filter": "https://www.ecosia.org"
- }
-},
-{
- "action": {
-     "type": "css-display-none",
-     "selector": "div[id='taw']"
- },
- "trigger": {
-     "url-filter": "https://www.google.com"
- }
-},
-{
- "action": {
-     "type": "css-display-none",
-     "selector": "div[id='rhs']"
- },
- "trigger": {
-     "url-filter": "https://www.google.com"
- }
-},
-{
- "action": {
-     "type": "css-display-none",
-     "selector": "div[class*='commercial']"
- },
- "trigger": {
-     "url-filter": "https://www.google.com"
- }
-},
-{
- "action": {
-     "type": "css-display-none",
-     "selector": "div[id='tadsb']"
- },
- "trigger": {
-     "url-filter": "https://www.google.com"
- }
-},
-{
- "action": {
-     "type": "block"
- },
- "trigger": {
-     "url-filter": "https://ads.pubmatic.com"
- }
-},
-{
- "action": {
-     "type": "block"
- },
- "trigger": {
-     "url-filter": ".*googlesyndication.com"
- }
-},
-{
- "action": {
-     "type": "block"
- },
- "trigger": {
-     "url-filter": "https://www.dianomi.com"
- }
-},
-{
- "action": {
-     "type": "block"
- },
- "trigger": {
-     "url-filter": "https://vars.hotjar.com"
- }
-},
-{
- "action": {
-     "type": "block"
- },
- "trigger": {
-     "url-filter": "https://contextual.media.net"
- }
-},
-{
- "action": {
-     "type": "block"
- },
- "trigger": {
-     "url-filter": "https://imasdk.googleapis.com"
- }
-},
-{
- "action": {
-     "type": "block"
- },
- "trigger": {
-     "url-filter": "https://platform.twitter.com"
- }
-},
-{
- "action": {
-     "type": "block"
- },
- "trigger": {
-     "url-filter": "https://mafo.adalliance.io"
- }
-},
-{
- "action": {
-     "type": "block"
- },
- "trigger": {
-     "url-filter": "https://ad.yieldlab.net"
- }
-},
-{
- "action": {
-     "type": "block"
- },
- "trigger": {
-     "url-filter": ".*adsystem.com"
- }
-},
-{
- "action": {
-     "type": "block"
- },
- "trigger": {
-     "url-filter": "https://static.emsservice.de"
- }
-},
-{
- "action": {
-     "type": "block"
- },
- "trigger": {
-     "url-filter": "https://cdn.flashtalking.com"
- }
-},
-{
- "action": {
-     "type": "block"
- },
- "trigger": {
-     "url-filter": "https://gum.criteo.com"
- }
-},
-{
- "action": {
-     "type": "block"
- },
- "trigger": {
-     "url-filter": "https://imagesrv.adition.com"
- }
-},
-{
- "action": {
-     "type": "block"
- },
- "trigger": {
-     "url-filter": "https://us-u.openx.net"
- }
-},
-{
- "action": {
-     "type": "block"
- },
- "trigger": {
-     "url-filter": "https://www.google.com/pagead/"
- }
-},
-{
- "action": {
-     "type": "block"
- },
- "trigger": {
-     "url-filter": "https://interactive.guim.co.uk"
- }
-},
-{
- "action": {
-     "type": "block"
- },
- "trigger": {
-     "url-filter": "https://js-sec.indexww.com"
- }
-},
-{
- "action": {
-     "type": "block"
- },
- "trigger": {
-     "url-filter": "https://elb.the-ozone-project.com"
- }
-},
-{
- "action": {
-     "type": "block"
- },
- "trigger": {
-     "url-filter": "https://www.googleadservices.com"
- }
-},
-{
- "action": {
-     "type": "block"
- },
- "trigger": {
-     "url-filter": "https://googleads.g.doubleclick.net"
- }
-},
-{
- "action": {
-     "type": "block"
- },
- "trigger": {
-     "url-filter": "https://s7.addthis.com"
- }
-},
-{
- "action": {
-     "type": "block"
- },
- "trigger": {
-     "url-filter": "https://widgets.sparwelt.click"
- }
-},
-{
- "action": {
-     "type": "block"
- },
- "trigger": {
-     "url-filter": "https://adstax-match.adrtx.net"
- }
-},
-{
- "action": {
-     "type": "block"
- },
- "trigger": {
-     "url-filter": "https://aax-eu.amazon-adsystem.com"
- }
-},
-{
- "action": {
-     "type": "block"
- },
- "trigger": {
-     "url-filter": "https://datawrapper.dwcdn.net"
- }
-},
-{
- "action": {
-     "type": "block"
- },
- "trigger": {
-     "url-filter": "https://secure-assets.rubiconproject.com"
- }
-},
-{
- "action": {
-     "type": "block"
- },
- "trigger": {
-     "url-filter": "https://eus.rubiconproject.com"
- }
-},
-{
- "action": {
-     "type": "block"
- },
- "trigger": {
-     "url-filter": "https://ams.creativecdn.com"
- }
-},
-{
- "action": {
-     "type": "block"
- },
- "trigger": {
-     "url-filter": "https://www.youtube.com/embed"
- }
-},
-{
- "action": {
-     "type": "block"
- },
- "trigger": {
-     "url-filter": "https://www.medtargetsystem.com"
- }
-},
-{
- "action": {
-     "type": "block"
- },
- "trigger": {
-     "url-filter": "https://tr.snapchat.com"
- }
-},
-{
- "action": {
-     "type": "block"
- },
- "trigger": {
-     "url-filter": "https://cloudfront.net"
- }
-}
-]
-"""
- 
- private static let _cookies = """
-[
-{
- "action": {
-     "type": "block-cookies"
- },
- "trigger": {
-     "url-filter": ".*"
- }
-}
-]
-"""
-}
-
- */
