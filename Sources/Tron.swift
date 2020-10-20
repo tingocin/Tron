@@ -10,7 +10,7 @@ public final class Tron {
         .init { [weak self] result in
             self?.queue.async {
                 let url = url.absoluteString
-                if Self.equals.contains(url) {
+                if Ignore(rawValue: url) != nil {
                     result(.success(.ignore))
                     return
                 }
@@ -18,9 +18,11 @@ public final class Tron {
                     url.hasPrefix(Scheme.http.rawValue) ? url.dropFirst(7) : nil {
                     if shield {
                         for item in schemeless.components(separatedBy: "/").first!.components(separatedBy: ".") {
-                            guard Self.partial.contains(item) else { continue }
-                            result(.success(.block))
-                            return
+                            guard Block(rawValue: item) == nil else {
+                                result(.success(.block))
+                                return
+                            }
+                            continue
                         }
                         result(.success(.allow))
                     } else {
