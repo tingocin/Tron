@@ -23,7 +23,6 @@ final class AdsTests: XCTestCase {
     func testBlock() {
         XCTAssertTrue(contains("block", nil, "https://ads.pubmatic.com"))
         XCTAssertTrue(contains("block", nil, ".*googlesyndication.com"))
-        
         XCTAssertTrue(contains("block", nil, "https://www.dianomi.com"))
         XCTAssertTrue(contains("block", nil, "https://vars.hotjar.com"))
         XCTAssertTrue(contains("block", nil, "https://contextual.media.net"))
@@ -42,7 +41,7 @@ final class AdsTests: XCTestCase {
         XCTAssertTrue(contains("block", nil, "https://js-sec.indexww.com"))
         XCTAssertTrue(contains("block", nil, "https://elb.the-ozone-project.com"))
         XCTAssertTrue(contains("block", nil, "https://www.googleadservices.com"))
-        XCTAssertTrue(contains("block", nil, "https://googleads.g.doubleclick.net"))
+        XCTAssertTrue(contains("block", nil, ".*doubleclick.net"))
         XCTAssertTrue(contains("block", nil, "https://s7.addthis.com"))
         XCTAssertTrue(contains("block", nil, "https://widgets.sparwelt.click"))
         XCTAssertTrue(contains("block", nil, "https://adstax-match.adrtx.net"))
