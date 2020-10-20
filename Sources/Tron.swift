@@ -9,13 +9,11 @@ public final class Tron {
     public func policy(for url: URL, shield: Bool) -> Future<Policy, Never> {
         .init { [weak self] result in
             self?.queue.async {
-                let url = url.absoluteString
-                if Ignore(rawValue: url) != nil {
+                if Ignore(rawValue: url.absoluteString) != nil {
                     result(.success(.ignore))
                     return
                 }
-                if let schemeless = url.hasPrefix(Scheme.https.rawValue) ? url.dropFirst(8) :
-                    url.hasPrefix(Scheme.http.rawValue) ? url.dropFirst(7) : nil {
+                if let schemeless = Scheme.schemeless(url) {
                     if shield {
                         let domain = schemeless.components(separatedBy: "/").first!
                         for item in domain.components(separatedBy: ".") {
