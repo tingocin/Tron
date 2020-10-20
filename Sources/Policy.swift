@@ -4,6 +4,6 @@ public enum Policy {
     case
     allow,
     ignore,
-    block,
-    external
+    external,
+    block(String)
 }

@@ -17,19 +17,19 @@ public final class Tron {
                 if let schemeless = url.hasPrefix(Scheme.https.rawValue) ? url.dropFirst(8) :
                     url.hasPrefix(Scheme.http.rawValue) ? url.dropFirst(7) : nil {
                     if shield {
-                        for item in schemeless.components(separatedBy: "/").first!.components(separatedBy: ".") {
+                        let domain = schemeless.components(separatedBy: "/").first!
+                        for item in domain.components(separatedBy: ".") {
                             guard Block(rawValue: item) == nil else {
-                                result(.success(.block))
+                                result(.success(.block(domain)))
                                 return
                             }
                             continue
                         }
-                        result(.success(.allow))
-                    } else {
-                        result(.success(.allow))
                     }
+                    result(.success(.allow))
+                } else {
+                    result(.success(.external))
                 }
-                result(.success(.external))
             }
         }
     }

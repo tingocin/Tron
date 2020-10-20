@@ -32,8 +32,11 @@ final class UnshieldTests: XCTestCase {
         expect.expectedFulfillmentCount = listA.count
         listA.forEach { url in
             tron.policy(for: URL(string: url)!, shield: false).sink {
-                XCTAssertEqual(.ignore, $0, url)
-                expect.fulfill()
+                if case .ignore = $0 {
+                    expect.fulfill()
+                } else {
+                    XCTFail(url)
+                }
             }.store(in: &subs)
         }
         waitForExpectations(timeout: 1)
@@ -44,8 +47,11 @@ final class UnshieldTests: XCTestCase {
         expect.expectedFulfillmentCount = listB.count
         listB.forEach { url in
             tron.policy(for: URL(string: url)!, shield: false).sink {
-                XCTAssertEqual(.allow, $0, url)
-                expect.fulfill()
+                if case .allow = $0 {
+                    expect.fulfill()
+                } else {
+                    XCTFail(url)
+                }
             }.store(in: &subs)
         }
         waitForExpectations(timeout: 1)
@@ -56,8 +62,11 @@ final class UnshieldTests: XCTestCase {
         expect.expectedFulfillmentCount = listC.count
         listC.forEach { url in
             tron.policy(for: URL(string: url)!, shield: false).sink {
-                XCTAssertEqual(.external, $0, url)
-                expect.fulfill()
+                if case .external = $0 {
+                    expect.fulfill()
+                } else {
+                    XCTFail(url)
+                }
             }.store(in: &subs)
         }
         waitForExpectations(timeout: 1)

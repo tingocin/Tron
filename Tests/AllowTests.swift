@@ -21,8 +21,11 @@ final class AllowTests: XCTestCase {
         expect.expectedFulfillmentCount = list.count
         list.forEach { url in
             tron.policy(for: URL(string: url)!, shield: true).sink {
-                XCTAssertEqual(.allow, $0, url)
-                expect.fulfill()
+                if case .allow = $0 {
+                    expect.fulfill()
+                } else {
+                    XCTFail(url)
+                }
             }.store(in: &subs)
         }
         waitForExpectations(timeout: 1)
