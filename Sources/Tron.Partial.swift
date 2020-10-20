@@ -45,5 +45,7 @@ extension Tron {
                                 "tr",
                                 "cloudfront",
                                 "cedexis",
-                                "google-analytics"])
+                                "google-analytics",
+                                "scorecardresearch",
+                                "cedexis-radar"])
 }

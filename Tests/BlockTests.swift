@@ -46,7 +46,9 @@ final class BlockTests: XCTestCase {
         "https://tr.snapchat.com/cm/i?pid=da17f2f6-35e0-46e3-b2ec-3f325753384d",
         "https://d1jow6p6g37b9u.cloudfront.net/1I5Z20ucHo6CF0SQCXRY0YdREn9ZDUmNBoSEBY6B6mRQAVqt1F6Z24KC9Via-FmTF2xS24i60IqM-2qiEnWZ13yC0EKWA3CtFGtS24u68UuJAX-MCWxS94ysCGOY7HtUG2pS9IesD3pQAGmXCGxS24i600qY7IyH11-0BUWtGGdVHo6cHo6B6mRQAVqt1F6Z20WE0XWVAH-20Xe324uB0GiZ7n-uFHSz2k-cHo5R10dT10JR0EJQohJg?TI=MQA3j5TxzwUMMYN#goog_1789187359",
         "https://rpt.cedexis.com/f1/_CgJqMRAUGHoiBQgBEL5YKNuj_bIPMJvWuvwFOJvWuvwFQNKgpsECSg8IAxA1GLFFIAAo74OAoARQAFoKCAAQABgAIAAoAGABahNidXR0b24xLmxoci5odi5wcm9kggEPCAMQNRixRSAAKO-DgKAEiAHZ7vOvApABAJgBAA/1/11326/42297/1,2/0/0/0/0",
-        "https://www.google-analytics.com/collect?v=1&_v=j83&a=609127739&t=pageview&_s=1&dl=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2F%3F&dp=flagship3_feed&ul=en-gb&de=UTF-8&dt=LinkedIn&sd=24-bit&sr=2048x1280&vp=2048x294&je=0&_u=QACAAAAB~&jid=&gjid=&cid=949688776.1596968678&tid=UA-62256447-1&_gid=1361093956.1603097042&cd24=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2F%3F&cd25=1&z=1694576221"
+        "https://www.google-analytics.com/collect?v=1&_v=j83&a=609127739&t=pageview&_s=1&dl=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2F%3F&dp=flagship3_feed&ul=en-gb&de=UTF-8&dt=LinkedIn&sd=24-bit&sr=2048x1280&vp=2048x294&je=0&_u=QACAAAAB~&jid=&gjid=&cid=949688776.1596968678&tid=UA-62256447-1&_gid=1361093956.1603097042&cd24=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2F%3F&cd25=1&z=1694576221",
+        "https://sb.scorecardresearch.com/b2?c1=2&c2=6402952&c3=&c4=&c5=&c6=&c15=&ns__t=1603185424706&ns_c=UTF-8&c7=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2F&c9=",
+        "https://i2-iqihwplchtpqfeenjhkwgvkbykkzhp.init.cedexis-radar.net/i2/1/11326/j1/20/122/1603185435/0/0/providers.json?imagesok=1&n=1&p=1&r=1&s=1&t=1"
     ]
     
     override func setUp() {
