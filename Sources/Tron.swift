@@ -9,25 +9,21 @@ public final class Tron {
     public func policy(for url: URL, shield: Bool) -> Future<Policy, Never> {
         .init { [weak self] result in
             self?.queue.async {
-                if Ignore(rawValue: url.absoluteString) != nil {
-                    result(.success(.ignore))
-                    return
-                }
-                if let schemeless = Scheme.schemeless(url) {
-                    if shield {
-                        let domain = schemeless.components(separatedBy: "/").first!
-                        for item in domain.components(separatedBy: ".") {
-                            guard Block(rawValue: item) == nil else {
-                                result(.success(.block(domain)))
-                                return
-                            }
-                            continue
+                result(.success(
+                        Ignore(rawValue: url.absoluteString).map { _ in
+                            .ignore
                         }
-                    }
-                    result(.success(.allow))
-                } else {
-                    result(.success(.external))
-                }
+                        ?? Scheme.schemeless(url).map {
+                            if shield {
+                                let domain = $0.components(separatedBy: "/").first!
+                                for item in domain.components(separatedBy: ".") {
+                                    guard Block(rawValue: item) == nil else { return .block(domain) }
+                                    continue
+                                }
+                            }
+                            return .allow
+                        }
+                        ?? .external))
             }
         }
     }
