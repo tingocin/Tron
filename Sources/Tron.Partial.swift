@@ -43,5 +43,6 @@ extension Tron {
                                 "optimizely",
                                 "medtargetsystem",
                                 "tr",
-                                "cloudfront"])
+                                "cloudfront",
+                                "cedexis"])
 }
