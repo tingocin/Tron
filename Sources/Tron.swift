@@ -11,7 +11,7 @@ public final class Tron {
             self?.queue.async {
                 let url = url.absoluteString
                 if Self.equals.contains(url) {
-                    result(.success(.deny))
+                    result(.success(.ignore))
                     return
                 }
                 if let schemeless = url.hasPrefix(Scheme.https.rawValue) ? url.dropFirst(8) :
@@ -19,7 +19,7 @@ public final class Tron {
                     if shield {
                         for item in schemeless.components(separatedBy: "/").first!.components(separatedBy: ".") {
                             guard Self.partial.contains(item) else { continue }
-                            result(.success(.deny))
+                            result(.success(.block))
                             return
                         }
                         result(.success(.allow))

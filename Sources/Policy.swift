@@ -3,6 +3,7 @@ import Foundation
 public enum Policy {
     case
     allow,
-    deny,
+    ignore,
+    block,
     external
 }

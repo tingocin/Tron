@@ -2,7 +2,7 @@ import XCTest
 import Tron
 import Combine
 
-final class AcceptTests: XCTestCase {
+final class AllowTests: XCTestCase {
     private var tron: Tron!
     private var subs = Set<AnyCancellable>()
     private let list = [

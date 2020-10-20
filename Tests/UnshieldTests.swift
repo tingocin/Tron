@@ -27,12 +27,12 @@ final class UnshieldTests: XCTestCase {
         tron = .init()
     }
     
-    func testDeny() {
+    func testIgnore() {
         let expect = expectation(description: "")
         expect.expectedFulfillmentCount = listA.count
         listA.forEach { url in
             tron.policy(for: URL(string: url)!, shield: false).sink {
-                XCTAssertEqual(.deny, $0, url)
+                XCTAssertEqual(.ignore, $0, url)
                 expect.fulfill()
             }.store(in: &subs)
         }

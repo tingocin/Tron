@@ -6,8 +6,6 @@ final class BlockTests: XCTestCase {
     private var tron: Tron!
     private var subs = Set<AnyCancellable>()
     private let list =  [
-        "about:blank",
-        "about:srcdoc",
         "https://sourcepoint.theguardian.com/index.html?message_id=343252&consentUUID=4debba32-1827-4286-b168-cd0a6068f5f5&requestUUID=0a3ee8d3-cc2e-43b1-99ba-ceb02302f3e5&preload_message=true)",
         "https://tags.crwdcntrl.net/lt/shared/1/lt.iframe.html",
         "https://elb.the-ozone-project.com/static/load-cookie.html?gdpr=1&gdpr_consent=CO7HiBtO7HiBtAGABCENA7CgAP_AAEfAAAYgGStT_S9fb2-je_59d9t0eY1f9763tewjhgeMs-4NwRuW_J4WrmMyvB34JqAKGAgEujJBAQdlGGDcBQgAgIkFgTLMYk2MiwNKJpJEClIbM2dYGC1PnUVDuQCY7E--Pvrzvl-6-3__YGSEAGAAKAQACGAgIEChUIAEIQxIAAAACggAAoEgAAAgQLIoCOEAAABAYAIAAAAAggAIBAAIAAEBAAAAAAIAAARAIAAQACAEAAAAAEEABIgAAACAEhAAAAAKAAAUAAAIAgAAAAAZ3QDxkAsAFQATABHADLAGoAPwAjACYgE2ALRAWwNABABmAY8IgJAAqACSAFYAZYA1ABsgD8AIwAUsA1gB8gENgIvASIAmwBOwCkQFyBIFQACwAKgAZAA4AB4AEAAKgAYABEACSAEyAKoArABYADeAHOARABEgCaAFKAMMAZcA1ADVAGyAPiAfYB-gEYAMUAawA2gBuAD5AIbARUAi8BIgCYgEygJsATsApEBYoC2AFyBQAYARwGMgMeDQEwAVABJACsAMsAagA2QB-AEYAKWAawA-QCGwEXgJEATYAnYBSIC5AGMCoCAAKgAmACOAGWANQAfgBGACOAFLASCAmIBNgC2AFyALzAZEOgSgALAAqABkADgAIIAYABiAD4AIgATIAqgCsAFgAMQAbwA5gCIAE0AKUAagA2QBvwD7APwAjABcwC8gGKANwAdMBDYCIgEXgJBASIAmwBOwCxYFsAWyAuQeAFACOAioBjMDHAMdAZEQgJgALAAyADEAJgAVQA3gCOAGoAN8AfgBGADFAJBASIAmwBYoC0YFsAWyAuQiABAY8SgLAALAAyAByAGAAYgBEACYAFUAMQAbYBEAESAKUAaoA2QB-AEYAMUAbgBF4CRAE2ALFAWwTACABHARUAxkBjxSA6AAsACoAGQAOAAggBgAGIARAAmABSACqAFgAMQAcwBEAClAGqANmAfYB-AEYALyAbQA3ACLwEiAJsATsAsUBbAC5CoAUAHwARwGMgMeAZAA.YAAAAAAAAAAA&pubcid=8d865511-91a7-4b5a-bc49-e15dbdce494c&publisherId=OZONEGMG0001&siteId=4204204209&cb=1602421568472",
@@ -60,7 +58,7 @@ final class BlockTests: XCTestCase {
         expect.expectedFulfillmentCount = list.count
         list.forEach { url in
             tron.policy(for: URL(string: url)!, shield: true).sink {
-                XCTAssertEqual(.deny, $0, url)
+                XCTAssertEqual(.block, $0, url)
                 expect.fulfill()
             }.store(in: &subs)
         }
