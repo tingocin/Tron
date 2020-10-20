@@ -44,5 +44,6 @@ extension Tron {
                                 "medtargetsystem",
                                 "tr",
                                 "cloudfront",
-                                "cedexis"])
+                                "cedexis",
+                                "google-analytics"])
 }
