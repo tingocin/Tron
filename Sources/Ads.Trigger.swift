@@ -41,7 +41,7 @@ extension Ads {
         cloudfront = "https://cloudfront.net",
         linkedin = "https://platform.linkedin.com",
         google_analytics = "https://www.google-analytics.com",
-        google_accounts = "https://accounts.google.com/"
+        google_accounts = "https://accounts.google.com"
         
         var description: String {
             """
