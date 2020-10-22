@@ -37,6 +37,7 @@ final class AdsTests: XCTestCase {
         XCTAssertTrue(contains("block", nil, "https://imagesrv.adition.com"))
         XCTAssertTrue(contains("block", nil, "https://us-u.openx.net"))
         XCTAssertTrue(contains("block", nil, "https://www.google.com/pagead/"))
+        XCTAssertTrue(contains("block", nil, "https://www.google.com/recaptcha/"))
         XCTAssertTrue(contains("block", nil, "https://interactive.guim.co.uk"))
         XCTAssertTrue(contains("block", nil, "https://js-sec.indexww.com"))
         XCTAssertTrue(contains("block", nil, "https://elb.the-ozone-project.com"))

@@ -21,6 +21,7 @@ extension Ads {
         adition = "https://imagesrv.adition.com",
         openx = "https://us-u.openx.net",
         google_pagead = "https://www.google.com/pagead/",
+        google_recaptcha = "https://www.google.com/recaptcha/",
         guim = "https://interactive.guim.co.uk",
         indexww = "https://js-sec.indexww.com",
         the_ozone_project = "https://elb.the-ozone-project.com",

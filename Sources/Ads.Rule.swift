@@ -25,6 +25,7 @@ extension Ads {
                                 .init(.block, .adition),
                                 .init(.block, .openx),
                                 .init(.block, .google_pagead),
+                                .init(.block, .google_recaptcha),
                                 .init(.block, .guim),
                                 .init(.block, .indexww),
                                 .init(.block, .the_ozone_project),
