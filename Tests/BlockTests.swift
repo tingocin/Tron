@@ -46,7 +46,8 @@ final class BlockTests: XCTestCase {
         "https://rpt.cedexis.com/f1/_CgJqMRAUGHoiBQgBEL5YKNuj_bIPMJvWuvwFOJvWuvwFQNKgpsECSg8IAxA1GLFFIAAo74OAoARQAFoKCAAQABgAIAAoAGABahNidXR0b24xLmxoci5odi5wcm9kggEPCAMQNRixRSAAKO-DgKAEiAHZ7vOvApABAJgBAA/1/11326/42297/1,2/0/0/0/0",
         "https://www.google-analytics.com/collect?v=1&_v=j83&a=609127739&t=pageview&_s=1&dl=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2F%3F&dp=flagship3_feed&ul=en-gb&de=UTF-8&dt=LinkedIn&sd=24-bit&sr=2048x1280&vp=2048x294&je=0&_u=QACAAAAB~&jid=&gjid=&cid=949688776.1596968678&tid=UA-62256447-1&_gid=1361093956.1603097042&cd24=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2F%3F&cd25=1&z=1694576221",
         "https://sb.scorecardresearch.com/b2?c1=2&c2=6402952&c3=&c4=&c5=&c6=&c15=&ns__t=1603185424706&ns_c=UTF-8&c7=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2F&c9=",
-        "https://i2-iqihwplchtpqfeenjhkwgvkbykkzhp.init.cedexis-radar.net/i2/1/11326/j1/20/122/1603185435/0/0/providers.json?imagesok=1&n=1&p=1&r=1&s=1&t=1"
+        "https://i2-iqihwplchtpqfeenjhkwgvkbykkzhp.init.cedexis-radar.net/i2/1/11326/j1/20/122/1603185435/0/0/providers.json?imagesok=1&n=1&p=1&r=1&s=1&t=1",
+        "https://assets.bounceexchange.com/assets/bounce/local_storage_frame16.min.html#1990"
     ]
     
     override func setUp() {
