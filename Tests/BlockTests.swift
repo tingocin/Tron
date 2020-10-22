@@ -47,7 +47,8 @@ final class BlockTests: XCTestCase {
         "https://www.google-analytics.com/collect?v=1&_v=j83&a=609127739&t=pageview&_s=1&dl=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2F%3F&dp=flagship3_feed&ul=en-gb&de=UTF-8&dt=LinkedIn&sd=24-bit&sr=2048x1280&vp=2048x294&je=0&_u=QACAAAAB~&jid=&gjid=&cid=949688776.1596968678&tid=UA-62256447-1&_gid=1361093956.1603097042&cd24=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2F%3F&cd25=1&z=1694576221",
         "https://sb.scorecardresearch.com/b2?c1=2&c2=6402952&c3=&c4=&c5=&c6=&c15=&ns__t=1603185424706&ns_c=UTF-8&c7=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2F&c9=",
         "https://i2-iqihwplchtpqfeenjhkwgvkbykkzhp.init.cedexis-radar.net/i2/1/11326/j1/20/122/1603185435/0/0/providers.json?imagesok=1&n=1&p=1&r=1&s=1&t=1",
-        "https://assets.bounceexchange.com/assets/bounce/local_storage_frame16.min.html#1990"
+        "https://assets.bounceexchange.com/assets/bounce/local_storage_frame16.min.html#1990",
+        "https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fm.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Dm%26feature%3Dmobile_passive%26hl%3Den%26next%3Dhttps%253A%252F%252Fm.youtube.com%252Fsignin_passive%26noapp%3D1&hl=en&ltmpl=mobile&passive=true&service=youtube&uilel=3"
     ]
     
     override func setUp() {
