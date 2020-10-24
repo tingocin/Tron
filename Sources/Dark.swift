@@ -21,7 +21,7 @@ function dark() {
 
 if (!dark()) {
     var style = document.createElement('style');
-    style.innerHTML = ":root, img, .image, [style*=background-image], [class*=video-thumbnail-img], #player-container-id { filter: invert(1) hue-rotate(.5turn); }";
+    style.innerHTML = ":root, img, [style*=background-image], [class*=video-thumbnail-img], #player-container-id { filter: invert(1) hue-rotate(.5turn); }";
     document.head.appendChild(style);
 }
 """
