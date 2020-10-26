@@ -55,7 +55,8 @@ final class BlockTests: XCTestCase {
         "https://onmarshtompor.com/fac.php",
         "https://rakamu.com/gtm.js?id=1605003&pb=d035d4b916be431f68eb0b429aa25fa81603720734&psp=WRWBmnaR9N5ufb-6HB2e7qPT6Bs8lvJ89nVlLsMKdbytPu70z8sQ3xRD88cxKwuXDFl1zW8YQspU6BgKVvFAfsUDTwP1IYaKD68NuDQzjEReaw1w5iEu5gr-QwmUwda_GNxm0adkpbKif11mhVk_Wk_C5bi0IlMlacFuEnuNpPhwPtWNhFt_-b6Zy0zTuToZC_zJRLqylAFRAg_2P4OSHdkp8wB7aqWQ-Vnmo4sWMdNnySbJCjzF7ZfQl4MhWNs6g7lWsmZPHhJy9vn10J6AdVKzyOZ_tlaJxmUrv-VAB6LQDwG3sTyZVO437kgsp9kFZmpZWmeRSkeGHKC61B5FjGq6dhCDNNMgjDkI8k7qCSlK9r9R4LEqGBYl3xNwbt6izIlw3G9ZXxTevIHeSe7yAlPdxAv52Qe67PJWtX3Q397en9mP_WtQMmAbxam0VMQdQFHFO85gFxXyyz5vs5heY5XqmW8qnqoBYmsa1ChoxxMfX9cihAQ44_GwM9DqFZYht-eZY4Tbdvc=&sp=2&nojs=0&ix=0&t=1&x=801&y=801&wcks=1&wgl=1&cnvs=1",
         "https://bongacams.com/track?c=373640&subid=2010260701b188bdcb8b1349a383f05e2f05&subid2=1605003",
-        "https://bngpt.com/hit.php?c=373640&subid=2010260701b188bdcb8b1349a383f05e2f05&subid2=1605003"
+        "https://bngpt.com/hit.php?c=373640&subid=2010260701b188bdcb8b1349a383f05e2f05&subid2=1605003",
+        "https://user-shield.com/stream-secure-video-stream/?pid=adcash_int&c=224426820_23102790&af_siteid=3303429&af_click_lookback=7d&clickid=16037142711484955541100434613173325&advertiser=105233"
     ]
     
     override func setUp() {

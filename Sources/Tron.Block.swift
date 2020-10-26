@@ -57,6 +57,7 @@ extension Tron {
         the_ozone_project = "the-ozone-project",
         amazon_adsystem = "amazon-adsystem",
         google_analytics = "google-analytics",
-        cedexis_radar = "cedexis-radar"
+        cedexis_radar = "cedexis-radar",
+        user_shield = "user-shield"
     }
 }

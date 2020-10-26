@@ -48,7 +48,8 @@ extension Ads {
         onmarshtompor = "https://onmarshtompor.com",
         rakamu = "https://rakamu.com",
         bongacams = "https://bongacams.com",
-        bngpt = "https://bngpt.com"
+        bngpt = "https://bngpt.com",
+        user_shield = "https://user-shield.com"
         
         var description: String {
             """

@@ -52,7 +52,8 @@ extension Ads {
                                 .init(.block, .onmarshtompor),
                                 .init(.block, .rakamu),
                                 .init(.block, .bongacams),
-                                .init(.block, .bngpt)])
+                                .init(.block, .bngpt),
+                                .init(.block, .user_shield)])
         
         let action: Action
         let trigger: Trigger
