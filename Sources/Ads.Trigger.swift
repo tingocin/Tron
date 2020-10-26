@@ -51,7 +51,8 @@ extension Ads {
         bngpt = "https://bngpt.com",
         user_shield = "https://user-shield.com",
         adsco = "https://c.adsco.re",
-        bet365 = "https://www.bet365.com"
+        bet365 = "https://www.bet365.com",
+        caradstag = "https://caradstag.casa"
         
         var description: String {
             """

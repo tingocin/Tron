@@ -55,7 +55,8 @@ extension Ads {
                                 .init(.block, .bngpt),
                                 .init(.block, .user_shield),
                                 .init(.block, .adsco),
-                                .init(.block, .bet365)])
+                                .init(.block, .bet365),
+                                .init(.block, .caradstag)])
         
         let action: Action
         let trigger: Trigger

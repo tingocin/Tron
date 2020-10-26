@@ -56,6 +56,7 @@ extension Tron {
         bngpt,
         adsco,
         bet365,
+        caradstag,
         the_ozone_project = "the-ozone-project",
         amazon_adsystem = "amazon-adsystem",
         google_analytics = "google-analytics",
