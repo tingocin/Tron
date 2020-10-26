@@ -59,7 +59,8 @@ final class BlockTests: XCTestCase {
         "https://user-shield.com/stream-secure-video-stream/?pid=adcash_int&c=224426820_23102790&af_siteid=3303429&af_click_lookback=7d&clickid=16037142711484955541100434613173325&advertiser=105233",
         "https://c.adsco.re/#0.7374381790311297",
         "https://www.bet365.com/favicon.ico",
-        "https://caradstag.casa/cuid/"
+        "https://caradstag.casa/cuid/",
+        "https://monkposseacre.casa/iGYXvPEkSltqIsXKYIF/14919/?scontext_r=VLJ7xoeQEJMskmCu9NoqzF2yKbZIFVBr601NBbfVK3k&md=weiEmI6EDM1ADLiMnI6IyM3UDe4EjMiwiIiJiOiMzN1g3NzQjIsIiciojIoRHdwNnOv8yd3dnLn92bnxWZuM2btJCLigmI6IzN5IDLiwmI6ISZu1yZiJCLiQnI60iNwwiI6JiO4kzMzwiIrJiO0wiI1JiOiUjZ5YzY1MmM1QmMjZjIsIiZiojZhx2clxiIlJiOiEHailzNmRzdrZTay9me2JCLi0mI6EjNwMzNxYjN0cTNzQTf"
     ]
     
     override func setUp() {
