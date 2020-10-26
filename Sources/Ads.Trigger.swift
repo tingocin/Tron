@@ -53,7 +53,12 @@ extension Ads {
         adsco = "https://c.adsco.re",
         bet365 = "https://www.bet365.com",
         caradstag = "https://caradstag.casa",
-        monkposseacre = "https://monkposseacre.casa"
+        monkposseacre = "https://monkposseacre.casa",
+        apostropheemailcompetence = "http://apostropheemailcompetence.com",
+        fgfgnbmeieorr910 = "https://fgfgnbmeieorr910.com",
+        dexpredict = "https://www.dexpredict.com",
+        hornsgrid = "https://hornsgrid.com",
+        zap = "https://zap.buzz"
         
         var description: String {
             """

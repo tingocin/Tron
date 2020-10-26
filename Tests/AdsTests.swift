@@ -70,6 +70,11 @@ final class AdsTests: XCTestCase {
         XCTAssertTrue(contains("block", nil, "https://www.bet365.com"))
         XCTAssertTrue(contains("block", nil, "https://caradstag.casa"))
         XCTAssertTrue(contains("block", nil, "https://monkposseacre.casa"))
+        XCTAssertTrue(contains("block", nil, "http://apostropheemailcompetence.com"))
+        XCTAssertTrue(contains("block", nil, "https://fgfgnbmeieorr910.com"))
+        XCTAssertTrue(contains("block", nil, "https://www.dexpredict.com"))
+        XCTAssertTrue(contains("block", nil, "https://hornsgrid.com"))
+        XCTAssertTrue(contains("block", nil, "https://zap.buzz"))
     }
     
     private func contains(_ type: String, _ selector: String?, _ filter: String) -> Bool {

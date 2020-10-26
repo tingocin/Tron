@@ -60,7 +60,22 @@ final class BlockTests: XCTestCase {
         "https://c.adsco.re/#0.7374381790311297",
         "https://www.bet365.com/favicon.ico",
         "https://caradstag.casa/cuid/",
-        "https://monkposseacre.casa/iGYXvPEkSltqIsXKYIF/14919/?scontext_r=VLJ7xoeQEJMskmCu9NoqzF2yKbZIFVBr601NBbfVK3k&md=weiEmI6EDM1ADLiMnI6IyM3UDe4EjMiwiIiJiOiMzN1g3NzQjIsIiciojIoRHdwNnOv8yd3dnLn92bnxWZuM2btJCLigmI6IzN5IDLiwmI6ISZu1yZiJCLiQnI60iNwwiI6JiO4kzMzwiIrJiO0wiI1JiOiUjZ5YzY1MmM1QmMjZjIsIiZiojZhx2clxiIlJiOiEHailzNmRzdrZTay9me2JCLi0mI6EjNwMzNxYjN0cTNzQTf"
+        "https://monkposseacre.casa/iGYXvPEkSltqIsXKYIF/14919/?scontext_r=VLJ7xoeQEJMskmCu9NoqzF2yKbZIFVBr601NBbfVK3k&md=weiEmI6EDM1ADLiMnI6IyM3UDe4EjMiwiIiJiOiMzN1g3NzQjIsIiciojIoRHdwNnOv8yd3dnLn92bnxWZuM2btJCLigmI6IzN5IDLiwmI6ISZu1yZiJCLiQnI60iNwwiI6JiO4kzMzwiIrJiO0wiI1JiOiUjZ5YzY1MmM1QmMjZjIsIiZiojZhx2clxiIlJiOiEHailzNmRzdrZTay9me2JCLi0mI6EjNwMzNxYjN0cTNzQTf",
+        "http://apostropheemailcompetence.com/njx43m3j?zvc=72&refer=https%3A%2F%2Foload.party%2Floadsource.php%3Fserver%3D12%26id%3D121561924%26token%3DWDNLeUZNbjBjVUU5QlM3SXNnR3NUaTFkSk9ZYmd0c0w5Nm5FUnNUNGQyNEE2TWlVV1BaNjFSODNtYzRTcnpXQ3d3MUF3bnJLbFpMbmJlWlRtcWw5ZWcxeHRQWmo4RXh1MTVuRWVTcE0venVZakRvVi9ZMVNuTXZIVm9xNkpUb2lXRWRsYjY5VU1na2JMSGJmaW5Sa3ppWFFCa1F3T3N2Rk1IR3VQUlpzODk5UmxkbHJzUHlSZFJQMWNpYkJxZmVn&kw=%5B%22watching%22%5D&key=fcadcc451dab8bff46b41e2b67adc80c&scrWidth=375&scrHeight=812&tz=1&ship=&pst=&v=20.8.v.1&res=7.229&dev=r&adb=n",
+        "https://fgfgnbmeieorr910.com/gtm.js?id=1587358&pb=f14d8eb8972ab59bee14da9e15970a211603724254&psp=c0enK22uCCmLANsJI5C5h_Abx7yodpBMiNXehHA5fPHeUae0J_18hSPX7WZmSHJmMzPyVZ0OxPKUAK2zl34FAERUK05QFT98QUSoNeH0b8kx9q9YalPOc1vR3w8gVyyOdJEx6gjrT5lluJbyN4X4seIWLoDjBZklasn4_LgeglQGQ27qSbCpsfKXouEdQdAA8RKMUMrwkvR1RccQTBs0H63gkSzV-kNB044LHvjjcesn_SICCpHLam_6NfRyOdXSLdfaUlWuMUADfuCjoqzAFRL-3l6U1e9vmNqCx2yrr4fGGL-ZhM03IysKU7brUcz9gB4w7pG0c2DUxY3IdVH51wNVE2-NN6pa8eHN1ZLK04ezaYiaRmSi5cRvjy__l3xiwyIR6TXN4rZfUmBt-U4yEB8fJEVOJo3HG9YV8CtDhQ4NaPw2vr7ctgp8Efq-_c19JJa-t74nefoNPTdV5AEubvWJAhokpJJyBj4s0-MUL4yZsVdmbKYqzP9RyhI1xWw_HMc4T9eAMEZdL5jJOMx4ZIrqX4XHaf8X5wCID1SlmwyRLWDe8OyoZkv3EIfDr9N89T3TwnqOpCsqYGks6-xS9okrlcE=&sp=2&nojs=0&ix=0&t=1&x=801&y=801&wcks=0&wgl=1&cnvs=1",
+        "https://www.dexpredict.com/jump/next.php?r=2692607",
+        "https://hornsgrid.com/ng7y2swh3?key=17d7f7655624c90e52f1293128c0fd22&psid=MP1P3_1093",
+        "https://zap.buzz/pA0BjA7",
+        "https://xml.zeusadx.com/redirect?feed=249568&auth=UbRt0Q&pubid=105595",
+        "https://xml.adxnexus.com/redirect?feed=249569&auth=JoKr8C&pubid=102594",
+        "https://xml.revrtb.net/redirect?feed=249573&auth=fLiSI9&pubid=102592",
+        "https://xml.acertb.com/redirect?feed=249566&auth=WBe8j6&pubid=112746",
+        "https://xml.popmonetizer.net/redirect?feed=249572&auth=oZ6Qhn&pubid=102593",
+        "https://tiodmw.com/dsp/cu/clc?aid=4230258513742548404&t=1603717176&s=426015&sid=818",
+        "https://ratappe.com/dsp/cu/clc?aid=10021440260153756788&t=1603717176&s=426015&sid=713",
+        "https://t.riverhit.com/1/?spot_id=5706",
+        "https://ahojer.com/fp.html?rid=4230258513742548404_2&sd=aHR0cHM6Ly90aW9kbXcuY29t&ru=aHR0cHM6Ly90LnJpdmVyaGl0LmNvbS8xLz9zcG90X2lkPTU3MDY=",
+        "https://impactserving.com/link.engine?z=16121&guid=fe89a1e1-ef4a-4953-b915-7e5e3ea14d77"
     ]
     
     override func setUp() {
