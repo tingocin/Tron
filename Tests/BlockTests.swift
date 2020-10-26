@@ -52,7 +52,10 @@ final class BlockTests: XCTestCase {
         "https://ufpcdn.com/script/identify.html?frmt=0",
         "https://onclickgenius.com/script/i.php?stamat=m%7C%2C%2Cg2M6difzoGU3BZ9GH0dEdHP3xP.898%2CdykBTumZoMUuis6WFoOaFf6t9vHFosfN7DuJtMd_tppveqW_5eryWFhAYefsCzuytdHUgsVgtua-Dd2Zlvz7xFNoqFQ4GO1IlUJgWUeMnD8bP-0kldfG_3EgoMzZTHBf5lZnRYGknMU0o4kUz3e1mnL1EAjWhwYoDUh8sVYUdDjXOM8CDvYClMawHTJgOMn1FxEHrVXDZ-NcBFwrCmh_fNzH-KsJlQ7qGOOngxhADE_nLocKIeA7qQM-O258RFMpZ4cQkyuxpKHnJeSkAjF2DAp0cy0Kg_vHJ5_2TULcBMp6cwZ4LHPj2aeinKF9ONgrhyey6LzaH7WspzvX50hScS4uwe6DYSr3qIWWpCsK6lV1MuekmgeLTxnJDbneT0FDyMRMB4yDOVUfO9xvdZ2ZWeaCVe1k1i0BjmoTYVS2sLXZughts8YOkbMxfn0xty1Z55yzSlwujOE--ii8kCkE-Q%2C%2C&sr=1",
         "https://app.appsflyer.com/id583009522?pid=adcash_int&c=AdCash_CPI_T2_iOS&af_cost_currency=USD&af_cost_model=CPI&af_cost_value=0.80&af_click_lookback=7d&clickid=16037127571484955541013251528138112&advertiser=133648&af_siteid=3303429",
-        "https://onmarshtompor.com/fac.php"
+        "https://onmarshtompor.com/fac.php",
+        "https://rakamu.com/gtm.js?id=1605003&pb=d035d4b916be431f68eb0b429aa25fa81603720734&psp=WRWBmnaR9N5ufb-6HB2e7qPT6Bs8lvJ89nVlLsMKdbytPu70z8sQ3xRD88cxKwuXDFl1zW8YQspU6BgKVvFAfsUDTwP1IYaKD68NuDQzjEReaw1w5iEu5gr-QwmUwda_GNxm0adkpbKif11mhVk_Wk_C5bi0IlMlacFuEnuNpPhwPtWNhFt_-b6Zy0zTuToZC_zJRLqylAFRAg_2P4OSHdkp8wB7aqWQ-Vnmo4sWMdNnySbJCjzF7ZfQl4MhWNs6g7lWsmZPHhJy9vn10J6AdVKzyOZ_tlaJxmUrv-VAB6LQDwG3sTyZVO437kgsp9kFZmpZWmeRSkeGHKC61B5FjGq6dhCDNNMgjDkI8k7qCSlK9r9R4LEqGBYl3xNwbt6izIlw3G9ZXxTevIHeSe7yAlPdxAv52Qe67PJWtX3Q397en9mP_WtQMmAbxam0VMQdQFHFO85gFxXyyz5vs5heY5XqmW8qnqoBYmsa1ChoxxMfX9cihAQ44_GwM9DqFZYht-eZY4Tbdvc=&sp=2&nojs=0&ix=0&t=1&x=801&y=801&wcks=1&wgl=1&cnvs=1",
+        "https://bongacams.com/track?c=373640&subid=2010260701b188bdcb8b1349a383f05e2f05&subid2=1605003",
+        "https://bngpt.com/hit.php?c=373640&subid=2010260701b188bdcb8b1349a383f05e2f05&subid2=1605003"
     ]
     
     override func setUp() {

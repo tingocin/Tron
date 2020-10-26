@@ -45,7 +45,10 @@ extension Ads {
         ufpcdn = "https://ufpcdn.com",
         onclickgenius = "https://onclickgenius.com",
         appsflyer = "https://app.appsflyer.com",
-        onmarshtompor = "https://onmarshtompor.com"
+        onmarshtompor = "https://onmarshtompor.com",
+        rakamu = "https://rakamu.com",
+        bongacams = "https://bongacams.com",
+        bngpt = "https://bngpt.com"
         
         var description: String {
             """

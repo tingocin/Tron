@@ -49,7 +49,10 @@ extension Ads {
                                 .init(.block, .ufpcdn),
                                 .init(.block, .onclickgenius),
                                 .init(.block, .appsflyer),
-                                .init(.block, .onmarshtompor)])
+                                .init(.block, .onmarshtompor),
+                                .init(.block, .rakamu),
+                                .init(.block, .bongacams),
+                                .init(.block, .bngpt)])
         
         let action: Action
         let trigger: Trigger

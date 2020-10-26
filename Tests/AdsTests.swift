@@ -62,6 +62,9 @@ final class AdsTests: XCTestCase {
         XCTAssertTrue(contains("block", nil, "https://onclickgenius.com"))
         XCTAssertTrue(contains("block", nil, "https://app.appsflyer.com"))
         XCTAssertTrue(contains("block", nil, "https://onmarshtompor.com"))
+        XCTAssertTrue(contains("block", nil, "https://rakamu.com"))
+        XCTAssertTrue(contains("block", nil, "https://bongacams.com"))
+        XCTAssertTrue(contains("block", nil, "https://bngpt.com"))
     }
     
     private func contains(_ type: String, _ selector: String?, _ filter: String) -> Bool {
