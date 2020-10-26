@@ -45,7 +45,8 @@ extension Ads {
                                 .init(.block, .cloudfront),
                                 .init(.block, .linkedin),
                                 .init(.block, .google_analytics),
-                                .init(.block, .google_accounts)])
+                                .init(.block, .google_accounts),
+                                .init(.block, .ufpcdn)])
         
         let action: Action
         let trigger: Trigger
