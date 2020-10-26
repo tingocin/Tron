@@ -53,7 +53,8 @@ extension Ads {
                                 .init(.block, .rakamu),
                                 .init(.block, .bongacams),
                                 .init(.block, .bngpt),
-                                .init(.block, .user_shield)])
+                                .init(.block, .user_shield),
+                                .init(.block, .adsco)])
         
         let action: Action
         let trigger: Trigger

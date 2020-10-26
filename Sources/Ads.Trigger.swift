@@ -49,7 +49,8 @@ extension Ads {
         rakamu = "https://rakamu.com",
         bongacams = "https://bongacams.com",
         bngpt = "https://bngpt.com",
-        user_shield = "https://user-shield.com"
+        user_shield = "https://user-shield.com",
+        adsco = "https://c.adsco.re"
         
         var description: String {
             """
