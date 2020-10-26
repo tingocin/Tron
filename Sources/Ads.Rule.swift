@@ -48,7 +48,8 @@ extension Ads {
                                 .init(.block, .google_accounts),
                                 .init(.block, .ufpcdn),
                                 .init(.block, .onclickgenius),
-                                .init(.block, .appsflyer)])
+                                .init(.block, .appsflyer),
+                                .init(.block, .onmarshtompor)])
         
         let action: Action
         let trigger: Trigger

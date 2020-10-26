@@ -51,7 +51,8 @@ final class BlockTests: XCTestCase {
         "https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fm.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Dm%26feature%3Dmobile_passive%26hl%3Den%26next%3Dhttps%253A%252F%252Fm.youtube.com%252Fsignin_passive%26noapp%3D1&hl=en&ltmpl=mobile&passive=true&service=youtube&uilel=3",
         "https://ufpcdn.com/script/identify.html?frmt=0",
         "https://onclickgenius.com/script/i.php?stamat=m%7C%2C%2Cg2M6difzoGU3BZ9GH0dEdHP3xP.898%2CdykBTumZoMUuis6WFoOaFf6t9vHFosfN7DuJtMd_tppveqW_5eryWFhAYefsCzuytdHUgsVgtua-Dd2Zlvz7xFNoqFQ4GO1IlUJgWUeMnD8bP-0kldfG_3EgoMzZTHBf5lZnRYGknMU0o4kUz3e1mnL1EAjWhwYoDUh8sVYUdDjXOM8CDvYClMawHTJgOMn1FxEHrVXDZ-NcBFwrCmh_fNzH-KsJlQ7qGOOngxhADE_nLocKIeA7qQM-O258RFMpZ4cQkyuxpKHnJeSkAjF2DAp0cy0Kg_vHJ5_2TULcBMp6cwZ4LHPj2aeinKF9ONgrhyey6LzaH7WspzvX50hScS4uwe6DYSr3qIWWpCsK6lV1MuekmgeLTxnJDbneT0FDyMRMB4yDOVUfO9xvdZ2ZWeaCVe1k1i0BjmoTYVS2sLXZughts8YOkbMxfn0xty1Z55yzSlwujOE--ii8kCkE-Q%2C%2C&sr=1",
-        "https://app.appsflyer.com/id583009522?pid=adcash_int&c=AdCash_CPI_T2_iOS&af_cost_currency=USD&af_cost_model=CPI&af_cost_value=0.80&af_click_lookback=7d&clickid=16037127571484955541013251528138112&advertiser=133648&af_siteid=3303429"
+        "https://app.appsflyer.com/id583009522?pid=adcash_int&c=AdCash_CPI_T2_iOS&af_cost_currency=USD&af_cost_model=CPI&af_cost_value=0.80&af_click_lookback=7d&clickid=16037127571484955541013251528138112&advertiser=133648&af_siteid=3303429",
+        "https://onmarshtompor.com/fac.php"
     ]
     
     override func setUp() {

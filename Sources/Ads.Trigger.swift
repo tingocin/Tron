@@ -44,7 +44,8 @@ extension Ads {
         google_accounts = "https://accounts.google.com",
         ufpcdn = "https://ufpcdn.com",
         onclickgenius = "https://onclickgenius.com",
-        appsflyer = "https://app.appsflyer.com"
+        appsflyer = "https://app.appsflyer.com",
+        onmarshtompor = "https://onmarshtompor.com"
         
         var description: String {
             """
