@@ -10,7 +10,7 @@ public final class Tron {
         .init { [weak self] result in
             self?.queue.async {
                 result(.success(
-                        Ignore(rawValue: url.absoluteString).map { _ in
+                        url.scheme.flatMap(Ignore.init(rawValue:)).map { _ in
                             .ignore
                         }
                         ?? Scheme.schemeless(url).map {

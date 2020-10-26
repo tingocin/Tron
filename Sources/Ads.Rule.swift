@@ -54,7 +54,8 @@ extension Ads {
                                 .init(.block, .bongacams),
                                 .init(.block, .bngpt),
                                 .init(.block, .user_shield),
-                                .init(.block, .adsco)])
+                                .init(.block, .adsco),
+                                .init(.block, .bet365)])
         
         let action: Action
         let trigger: Trigger

@@ -57,7 +57,8 @@ final class BlockTests: XCTestCase {
         "https://bongacams.com/track?c=373640&subid=2010260701b188bdcb8b1349a383f05e2f05&subid2=1605003",
         "https://bngpt.com/hit.php?c=373640&subid=2010260701b188bdcb8b1349a383f05e2f05&subid2=1605003",
         "https://user-shield.com/stream-secure-video-stream/?pid=adcash_int&c=224426820_23102790&af_siteid=3303429&af_click_lookback=7d&clickid=16037142711484955541100434613173325&advertiser=105233",
-        "https://c.adsco.re/#0.7374381790311297"
+        "https://c.adsco.re/#0.7374381790311297",
+        "https://www.bet365.com/favicon.ico"
     ]
     
     override func setUp() {

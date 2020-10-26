@@ -50,7 +50,8 @@ extension Ads {
         bongacams = "https://bongacams.com",
         bngpt = "https://bngpt.com",
         user_shield = "https://user-shield.com",
-        adsco = "https://c.adsco.re"
+        adsco = "https://c.adsco.re",
+        bet365 = "https://www.bet365.com"
         
         var description: String {
             """
