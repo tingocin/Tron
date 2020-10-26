@@ -46,7 +46,9 @@ extension Ads {
                                 .init(.block, .linkedin),
                                 .init(.block, .google_analytics),
                                 .init(.block, .google_accounts),
-                                .init(.block, .ufpcdn)])
+                                .init(.block, .ufpcdn),
+                                .init(.block, .onclickgenius),
+                                .init(.block, .appsflyer)])
         
         let action: Action
         let trigger: Trigger

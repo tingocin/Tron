@@ -42,7 +42,9 @@ extension Ads {
         linkedin = "https://platform.linkedin.com",
         google_analytics = "https://www.google-analytics.com",
         google_accounts = "https://accounts.google.com",
-        ufpcdn = "https://ufpcdn.com"
+        ufpcdn = "https://ufpcdn.com",
+        onclickgenius = "https://onclickgenius.com",
+        appsflyer = "https://app.appsflyer.com"
         
         var description: String {
             """
