@@ -75,7 +75,8 @@ final class BlockTests: XCTestCase {
         "https://ratappe.com/dsp/cu/clc?aid=10021440260153756788&t=1603717176&s=426015&sid=713",
         "https://t.riverhit.com/1/?spot_id=5706",
         "https://ahojer.com/fp.html?rid=4230258513742548404_2&sd=aHR0cHM6Ly90aW9kbXcuY29t&ru=aHR0cHM6Ly90LnJpdmVyaGl0LmNvbS8xLz9zcG90X2lkPTU3MDY=",
-        "https://impactserving.com/link.engine?z=16121&guid=fe89a1e1-ef4a-4953-b915-7e5e3ea14d77"
+        "https://impactserving.com/link.engine?z=16121&guid=fe89a1e1-ef4a-4953-b915-7e5e3ea14d77",
+        "https://f853150605ccb.com/go.xml"
     ]
     
     override func setUp() {
